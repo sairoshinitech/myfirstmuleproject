@@ -21,6 +21,9 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
  output application/json
  ---
 
+
+
+
  {
 
      Name: payload.Name
@@ -30,7 +33,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 		</ee:transform>
 	</flow>
 	<flow name="1postflow" doc:id="f197d2b7-959d-414c-94ec-0e4dadece73a" >
-		<ee:transform doc:name="1json to java" doc:id="64030f0e-dc41-47e2-8360-b74b0790a976" >
+		<ee:transform doc:name="1(json to java)" doc:id="64030f0e-dc41-47e2-8360-b74b0790a976" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
 output application/java
