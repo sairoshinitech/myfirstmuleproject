@@ -5,13 +5,13 @@
  
 
     <groupId>com.mycompany</groupId>
-    <artifactId>fhir_patients_project</artifactId>
+    <artifactId>fhir_project</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>mule-application</packaging>
 
  
 
-    <name>fhir_patients_project</name>
+    <name>fhir_project</name>
 
  
 
