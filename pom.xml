@@ -33,12 +33,12 @@
                 <extensions>true</extensions>
                 <configuration>
                     <cloudHubDeployment>
-                        <username>RoShInI_</username>
+                        <username>RoShInI_2021</username>
                         <environment>Sandbox</environment>
                         <workers>1</workers>
                         <workerType>Micro</workerType>
                         <applicationName>fhirProjectService</applicationName>
-                        <password>ANYpoint2021</password>
+                        <password>ANYpoint$2021</password>
                         <muleVersion>4.3.0</muleVersion>
                         <objectStoreV2>true</objectStoreV2>
                     </cloudHubDeployment>
