@@ -8,28 +8,6 @@
 		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
 		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
 	<munit:config name="implementation-test-suite.xml" />
-	<munit:test name="implementation-test-suite-1postflowTest" doc:id="108ac953-6bfb-4725-8ec6-bd1057d853d9" description="Test">
-		<munit:execution >
-			<munit:set-event doc:name="Set Event" doc:id="9e2f2665-4deb-414f-8d52-2f5525345627" >
-				<munit:payload value="#[MunitTools::getResourceAsString('patientrequest.json')]" mediaType="application/fhir+json" />
-			</munit:set-event>
-			<flow-ref doc:name="Flow-ref to 1postflow" doc:id="197762a4-707f-490e-9d35-6158eb6135f2" name="1postflow"/>
-		</munit:execution>
-		<munit:validation >
-			<munit-tools:assert-that doc:name="Assert that" doc:id="7c003a3b-2507-445e-85ce-3c32cb347d45" is="#[MunitTools::notNullValue()]" expression="#[payload]" message="body not available"/>
-		</munit:validation>
-	</munit:test>
-	<munit:test name="implementation-test-suite-getpatientsidTest" doc:id="8478bf45-832d-4392-bc23-17aded34e6e2" description="Test">
-		<munit:execution >
-			<munit:set-event doc:name="Set Event" doc:id="0e9cb0d8-84f9-4d2e-a446-64579eea1834" >
-				<munit:attributes value="#[{ uriParams:&#10; { 'id' :  'patient2'}}]" />
-			</munit:set-event>
-			<flow-ref doc:name="Flow-ref to getpatientsid" doc:id="e67b1c89-c257-4f79-8b07-5d1ae3f096e0" name="getpatientsid"/>
-		</munit:execution>
-		<munit:validation >
-			<munit-tools:assert-that doc:name="Assert that" doc:id="57fb75d8-f48e-4972-b4d2-cb715351a6c0" is="#[MunitTools::notNullValue()]" message="uriparam not available" expression="#[payload]"/>
-		</munit:validation>
-	</munit:test>
 
 
 </mule>
